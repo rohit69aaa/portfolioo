@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Zomato</title>
+    <style>
+        /* General Form Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6e6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            width: 350px;
+            padding: 30px;
+            background-color: #fff;
+            border: 2px solid #ff4d4d;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Form Header */
+        form h1 {
+            text-align: center;
+            color: #ff4d4d;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        /* Input Fields */
+        form input[type="number"],
+        form input[type="email"],
+        form input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        /* Checkbox Label */
+        form label {
+            font-size: 14px;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        /* Placeholder Styling */
+        form input::placeholder {
+            color: #999;
+            font-size: 14px;
+        }
+
+        /* Hover and Focus Effects */
+        form input:focus {
+            border: 1px solid #ff4d4d;
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+            transition: 0.3s ease;
+        }
+
+        /* Submit Button */
+        form button {
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #e63939;
+        }
+
+        /* Error and Validation */
+        form input:invalid {
+            border-color: #ff0000;
+            box-shadow: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="Login">
+        <h1>Login to Zomato</h1>
+        <div>
+            <input type="number" placeholder="Enter your number" name="phone_number" id="number" required>
+        </div>
+        <div>
+            <input type="email" placeholder="Enter your email" name="email" id="email" required>
+        </div>
+        <div>
+            <input type="password" placeholder="Enter your password" name="password" id="password" required>
+        </div>
+        <div>
+            <label>
+                <input type="checkbox" name="terms" id="checkbox" required>
+                I agree to all the terms and conditions
+            </label>
+        </div>
+        <div>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</body>
+
+</html>

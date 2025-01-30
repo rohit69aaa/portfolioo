@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff4d4d;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 100px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #000;
+}
+
+/* Main Section Styles */
+main section {
+    text-align: center;
+    padding: 200px 20px;
+    color: #fff;
+    background: url('../img.png/zomato.png') no-repeat center center/cover;
+}
+
+main section img {
+    margin: 170px 0;
+    animation: fadeIn 2s ease;
+}
+
+main section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease;
+}
+
+main section input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+main section input:focus {
+    transform: scale(1.05);
+    outline: none;
+}
+
+/* Info Section Styles */
+.info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.info h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.info p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    background-color: #ffcccc;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease;
+}
+
+.feature h3 {
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    line-height: 1.5;
+}
+
+/* App Section Styles */
+section:last-of-type {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffe6e6;
+}
+
+section:last-of-type h2 {
+    color: #ff4d4d;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+section:last-of-type p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+section:last-of-type div img {
+    animation: zoomIn 1.5s ease;
+}
+
+section:last-of-type a img {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+section:last-of-type a img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background-color: #ff4d4d;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
